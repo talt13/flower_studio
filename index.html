@@ -1,0 +1,554 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Flowers store</title>
+        <link href="https://use.fontawesome.com/releases/v5.0.13/css/all.css" rel="stylesheet">
+        <link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin> <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;600;700&display=swap" rel="stylesheet">
+        <link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link href="https://fonts.googleapis.com/css2?family=Marck+Script&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="/css/slick.css">
+        <link rel="stylesheet" href="/css/reset.css">
+        <link rel="stylesheet" href="/css/style.css">
+</head>
+<body>
+    <header class="header">
+        <div class="container">
+                <div class="header__top">
+                    <nav class="header__nav header__nav--right header-nav">
+                        <ul class="header-nav__list">
+                            <li class="header-nav__item"><a class="header-nav__link" href="#">О компании</a></li>
+                            <li class="header-nav__item"><a class="header-nav__link" href="#">Доставка и оплата</a></li>
+                            <li class="header-nav__item"><a class="header-nav__link" href="#">Акции</a></li>
+                            <li class="header-nav__item"><a class="header-nav__link" href="#">Оптовикам</a></li>
+                            <li class="header-nav__item"><a class="header-nav__link" href="#">Новости</a></li>
+                            <li class="header-nav__item"><a class="header-nav__link" href="#">Гарантии</a></li>
+                            <li class="header-nav__item"><a class="header-nav__link" href="#">Контакты</a></li>
+                        </ul>
+                    </nav>
+                    <nav class="header__nav header-nav">
+                        <ul class="header-nav__list">
+                            <li class="header-nav__item"><a class="header-nav__link" href="#">Регистрация</a></li>
+                            <li class="header-nav__item"><a class="header-nav__link" href="#">Вход</a></li>
+                        </ul>
+                    </nav>
+                </div>
+                <div class="header__bottom">
+                    <div class="header__main">
+                        <div class="header__logo">
+                            <img class="logo" src="/css/images/logo.png" alt="" >
+                        </div>
+                        <div class="header__phones">
+                            <div class="header__item">
+                                <a class="header__phone" href="tel:84951203034">+7 (495) 120 30 34</a>
+                                <a href="" class="header__link">Заказать звонок </a>                 
+                            </div>
+                            <div class="header__item">
+                                <a class="header__phone" href="tel:88087877518">+7 (808) 787 75 18</a>
+                                <span class="header__description">Звонок бесплатный  </span>                      
+                            </div>
+                            <div class="header__mail">
+                                <div class="header__mail-icon"><i class="fas fa-map-marker-alt"></i></div>
+                                <div class="header__mail-text">Москва, пр-т Андропова, 11 кв.2, павильон №6</div>
+                            </div>
+                                <div class="header__shop header-goods">
+                                    <span class="header-goods__price">0 &#8381;</span>
+                                    <span class="header-goods__count">0 товаров</span>
+                                </div>
+                                <div class="header__busket">
+                                    <div class="header__busket-icon"><i class="fas fa-shopping-basket"></i></div>
+                                    <span class="header__busket__text">Корзина</span>
+                                </div>
+                        </div>
+                    </div>
+                    <div class="header__menu">
+                        <div class="header__content">
+                        
+                                <ul class="header-menu__list">
+                                    <li class="header-menu__item"><a href="">Цветы</a>
+                                    <ul class="header-menu-dropdown__list">
+                                        <li class="header-menu-dropdown__item"><a class="header-menu-dropdown__link" href="#"> <span> Розы </span> <i class="fas fa-chevron-right"></i></a></li>
+                                        <li class="header-menu-dropdown__item"><a class="header-menu-dropdown__link" href="#"> <span> Тюльпаны</span> <i class="fas fa-chevron-right"></i></a></li>
+                                        <li class="header-menu-dropdown__item"><a class="header-menu-dropdown__link" href="#"> <span> Лилии </span><i class="fas fa-chevron-right"></i></a></li>
+                                        <li class="header-menu-dropdown__item"><a class="header-menu-dropdown__link" href="#"> <span> Хризантемы</span><i class="fas fa-chevron-right"></i></a></li>
+                                        <li class="header-menu-dropdown__item"><a class="header-menu-dropdown__link" href="#"> <span> Пионы</span><i class="fas fa-chevron-right"></i></a></li>
+                                        <li class="header-menu-dropdown__item"><a class="header-menu-dropdown__link" href="#"> <span> Альстромерии</span> <i class="fas fa-chevron-right"></i></a></li>
+                                        <li class="header-menu-dropdown__item"><a class="header-menu-dropdown__link" href="#"> <span> Герберы</span><i class="fas fa-chevron-right"></i></a></li>
+                                        <li class="header-menu-dropdown__item"><a class="header-menu-dropdown__link" href="#"> <span> Каллы</span><i class="fas fa-chevron-right"></i></a></li>
+                                        <li class="header-menu-dropdown__item"><a class="header-menu-dropdown__link" href="#"> <span> Ромашки</span><i class="fas fa-chevron-right"></i></a></li>
+                                        <li class="header-menu-dropdown__item"><a class="header-menu-dropdown__link" href="#"> <span> Гвоздики</span><i class="fas fa-chevron-right"></i></a></li>
+                                        <li class="header-menu-dropdown__item"><a class="header-menu-dropdown__link" href="#"> <span> Фрезии</span><i class="fas fa-chevron-right"></i></a></li>
+                                    </ul></li>
+                                        <li class="header-menu__item"><a href="">Букеты</a>
+                                            <ul class="header-menu-dropdown__list">
+                                                <li class="header-menu-dropdown__item"><a class="header-menu-dropdown__link" href="#"> <span> Круглые </span> <i class="fas fa-chevron-right"></i></a></li>
+                                                <li class="header-menu-dropdown__item"><a class="header-menu-dropdown__link" href="#"> <span> Каскадные</span> <i class="fas fa-chevron-right"></i></a></li>
+                                                <li class="header-menu-dropdown__item"><a class="header-menu-dropdown__link" href="#"> <span> Каркасные </span><i class="fas fa-chevron-right"></i></a></li>
+                                                <li class="header-menu-dropdown__item"><a class="header-menu-dropdown__link" href="#"> <span> Линейные</span><i class="fas fa-chevron-right"></i></a></li>
+                                                <li class="header-menu-dropdown__item"><a class="header-menu-dropdown__link" href="#"> <span> Ассиметричные</span><i class="fas fa-chevron-right"></i></a></li>
+                                                <li class="header-menu-dropdown__item"><a class="header-menu-dropdown__link" href="#"> <span> Нестандартные</span> <i class="fas fa-chevron-right"></i></a></li>
+                                            </ul></li>
+                                        <li class="header-menu__item"><a href="">Композиции</a>
+                                            <ul class="header-menu-dropdown__list">
+                                                <li class="header-menu-dropdown__item"><a class="header-menu-dropdown__link" href="#"> <span> Круглые </span> <i class="fas fa-chevron-right"></i></a></li>
+                                                <li class="header-menu-dropdown__item"><a class="header-menu-dropdown__link" href="#"> <span> Каскадные</span> <i class="fas fa-chevron-right"></i></a></li>
+                                                <li class="header-menu-dropdown__item"><a class="header-menu-dropdown__link" href="#"> <span> Каркасные </span><i class="fas fa-chevron-right"></i></a></li>
+                                                <li class="header-menu-dropdown__item"><a class="header-menu-dropdown__link" href="#"> <span> Линейные</span><i class="fas fa-chevron-right"></i></a></li>
+                                                <li class="header-menu-dropdown__item"><a class="header-menu-dropdown__link" href="#"> <span> Ассиметричные</span><i class="fas fa-chevron-right"></i></a></li>
+                                                <li class="header-menu-dropdown__item"><a class="header-menu-dropdown__link" href="#"> <span> Нестандартные</span> <i class="fas fa-chevron-right"></i></a></li>
+                                            </ul></li>
+                                        <li class="header-menu__item gifts"><a href="">Подарки</a>
+                                            <ul class="header-menu-dropdown__list gifts">
+                                                <li class="header-menu-dropdown__item"><a class="header-menu-dropdown__link" href="#"> <span> Топперы</span> <i class="fas fa-chevron-right"></i></a></li>
+                                                <li class="header-menu-dropdown__item"><a class="header-menu-dropdown__link" href="#"> <span> Открытки и конверты</span> <i class="fas fa-chevron-right"></i></a></li>
+                                                <li class="header-menu-dropdown__item"><a class="header-menu-dropdown__link" href="#"> <span> Шоколад </span><i class="fas fa-chevron-right"></i></a></li>
+                                                <li class="header-menu-dropdown__item"><a class="header-menu-dropdown__link" href="#"> <span> Воздушные шары</span><i class="fas fa-chevron-right"></i></a></li>
+                                                <li class="header-menu-dropdown__item"><a class="header-menu-dropdown__link" href="#"> <span> Конфеты</span><i class="fas fa-chevron-right"></i></a></li>
+                                            </ul></li>
+                                        <li class="header-menu__item"><a href="">Акции %</a></li>
+                                </ul>
+                    
+                        </div>
+                        <div class="header__search" id="header__search"><i class="fas fa-search"></i>
+                        <div class="header__search-body" id="header__search-body">
+                            <form action="" class="search-form">
+                                <div class="search__wrapper">
+                                    <input class="search-input" type="text" placeholder="Поиск"> <div class="search-input__delete"><i class="fas fa-times"></i></div>
+                                </div>
+                                <input class="search-btn" type="submit" value="Найти">
+                            </form>
+                        </div>
+                     </div>
+                    </div>
+                </div>
+        </div>
+    </header>
+
+    <section class="s-banner">
+        <div class="container container--banner">
+            <div class="banner">
+              
+                
+                    <div class="js-banner">
+                        
+                        <div class="banner__item">
+                            <div class="banner__wrapper">
+                                <div class="banner__img">
+                                    <img src="/css/images/buket.png" alt="">
+                                </div>
+                                
+                                <div class="banner__content">
+                                    <h3 class="banner-content__title">Композиция <br> " Чудесное утро"</h3>
+                                    <p class="banner-content__description">Порадуйте того, кто дорог!</p>
+                                    
+                                </div>
+                            </div>
+                        </div>
+                        <div class="banner__item">
+
+                            <div class="banner__wrapper">
+                                <div class="banner__content">
+                                    <h3 class="banner-content__title">Букет из белых роз</h3>
+                                    <p class="banner-content__description desc-two">Любовь в каждом лепестке...</p>
+                                    
+                                </div>
+                                <div class="banner__img img-two">
+                                    <img src="/css/images/boucet.png" alt="">
+                                </div>
+                                
+                                
+                            </div>
+                        </div>
+                        <div class="banner__item">
+                            <div class="banner__wrapper">
+                                <div class="banner__img tulip-img">
+                                    <img src="/css/images/tulip.png" alt="">
+                                </div>
+                                
+                                <div class="banner__content ">
+                                    <h3 class="banner-content__title"> Тюльпаны </h3>
+                                    <p class="banner-content__description tulip">Подари вдохновение за мгновение!</p>
+                                    
+                                </div>
+                            </div>
+                        </div>
+                        <div class="banner__item">
+                            <div class="banner__wrapper">
+                                <div class="banner__img">
+                                    <img src="/css/images/roses.png" alt="">
+                                </div> 
+                                <div class="banner__content end">
+                                    <h3 class="banner-content__title">  Для дня Рождения, Юбилея </h3>
+                                    <p class="banner-content__description"> и любого другого праздника!</p>
+                                </div>
+                               
+                            </div>
+                        </div>
+                    </div>
+                    <div class="slick-slider-dots"></div>
+                    <a href="#" class="banner-content__btn">Выбрать</a>
+                
+            </div>
+        </div>
+    </section>
+
+    <section class="s-advantages">
+        <div class="container">
+            <div class="advantages">
+                <div class="advantages__item">
+                    <div class="advantages__img"><i class="fas fa-thumbs-up"></i> </div>
+                    <div class="advantages__content">
+                        <h4>Гарантия</h4>
+                        <p>свежести и качества цветов</p>
+                    </div>
+                </div>
+                <div class="advantages__item">
+                    <div class="advantages__img"><i class="far fa-handshake"></i></div>
+                    <div class="advantages__content">
+                        <h4>Доставка</h4>
+                        <p>по Москве и области</p>
+                    </div>
+                </div>
+                <div class="advantages__item">
+                    <div class="advantages__img"><i class="fas fa-wallet"></i></div>
+                    <div class="advantages__content">
+                        <h4>Оплата</h4>
+                        <p>Онлайн и наличными</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="s-hits"></section>
+    <div class="container">
+        <h2 class="title-section">Хиты продаж</h2>
+        <div class="hits ">
+            <ul class="tabs-navigation hits-navigation">
+                <li (show-tab='tab-hits') class="hits-navigation__item tabs-navigation__item tabs-navigation__item--active">Хиты продаж</li>
+                <li (show-tab='tab-benefit') class="hits-navigation__item tabs-navigation__item">Выгодно</li>
+                <li (show-tab='tab-new') class="hits-navigation__item tabs-navigation__item">Новинки</li>
+            </ul>
+            <div class="tabs__body hits__body">
+                <div class="tab tab--active ">
+                            <div class="products-line__slider">
+                                <div class="js-product-line__slider">
+
+
+                                    <div class="product-prev">
+                                        <div class="product-prev__header">
+                                                <img class="product-prev__img" src="/css/images/roma_2.png" alt="Изображение товара">
+                                        </div>
+                                        <div class="product-prev__body">
+                                            <div class="product-prev__inform">   
+                                                <span class="product-prev__title">
+                                                    Букет "Нежность"
+                                                </span>
+                                                <span class="product-prev__descr">
+                                                    Нежное сочетание белых роз и полевых ромашек
+                                                </span>
+                                             </div>
+                                             <div class="product-prev__price">
+                                                 <span class="product-prev__price-current">1890 руб.</span>
+                                                 <span class="product-prev__price-old">2650 руб.</span>
+                                             </div>
+                                        </div>
+                                        <div class="product-prev__footer">
+                                            <button class="btn_busket">В корзину</button>
+                                        </div>
+                                    </div>
+
+
+                                    <div class="product-prev">
+                                        <div class="product-prev__header">
+                                                <img  class="product-prev__img" src="/css/images/roses.png" alt="Изображение товара">
+                                        </div>
+                                        <div class="product-prev__body">
+                                            <div class="product-prev__inform">   
+                                                <span class="product-prev__title">
+                                                    Красные розы
+                                                </span>
+                                                <span class="product-prev__descr">
+                                                    Композиция из красных роз в коробке
+                                                </span>
+                                             </div>
+                                             <div class="product-prev__price">
+                                                 <span class="product-prev__price-current">3450 руб.</span>
+                                                 
+                                             </div>
+                                        </div>
+                                        <div class="product-prev__footer">
+                                            <button class="btn_busket">В корзину</button>
+                                        </div>
+                                    </div>
+
+                                    <div class="product-prev">
+                                        <div class="product-prev__header">
+                                                <img  class="product-prev__img" src="/css/images/alstomeria_2.png" alt="Изображение товара">
+                                        </div>
+                                        <div class="product-prev__body">
+                                            <div class="product-prev__inform">   
+                                                <span class="product-prev__title">
+                                                   Альстромерии
+                                                </span>
+                                                <span class="product-prev__descr">
+                                                   Букет ярких альстромерий
+                                                </span>
+                                             </div>
+                                             <div class="product-prev__price">
+                                                 <span class="product-prev__price-current">2750 руб.</span>
+                                                 
+                                             </div>
+                                        </div>
+                                        <div class="product-prev__footer">
+                                            <button class="btn_busket">В корзину</button>
+                                        </div>
+                                    </div>
+
+
+                                    <div class="product-prev">
+                                        <div class="product-prev__header">
+                                                <img  class="product-prev__img" src="/css/images/lili.png" alt="Изображение товара">
+                                        </div>
+                                        <div class="product-prev__body">
+                                            <div class="product-prev__inform">   
+                                                <span class="product-prev__title">
+                                                    Композиция "Венера"
+                                                </span>
+                                                <span class="product-prev__descr">
+                                                    Сочетание лилий, кустовых роз и фрезий
+                                                </span>
+                                             </div>
+                                             <div class="product-prev__price">
+                                                 <span class="product-prev__price-current">2900 руб.</span>
+                                                 <span class="product-prev__price-old">3420 руб.</span>
+                                             </div>
+                                        </div>
+                                        <div class="product-prev__footer">
+                                            <button class="btn_busket">В корзину</button>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                </div>
+                <div class="tab">
+                        
+                    <div class="products-line__slider">
+                        <div class="js-product-line__slider">
+
+
+                            <div class="product-prev">
+                                <div class="product-prev__header">
+                                        <img class="product-prev__img" src="/css/images/korobka.jpg" alt="Изображение товара">
+                                </div>
+                                <div class="product-prev__body">
+                                    <div class="product-prev__inform">   
+                                        <span class="product-prev__title">
+                                           Гипсофила
+                                        </span>
+                                        <span class="product-prev__descr">
+                                            Гипсофила в коробке
+                                        </span>
+                                     </div>
+                                     <div class="product-prev__price">
+                                         <span class="product-prev__price-current">1090 руб.</span>
+                                         <span class="product-prev__price-old">2450 руб.</span>
+                                     </div>
+                                </div>
+                                <div class="product-prev__footer">
+                                    <button class="btn_busket">В корзину</button>
+                                </div>
+                            </div>
+
+
+                            <div class="product-prev">
+                                <div class="product-prev__header">
+                                        <img  class="product-prev__img" src="/css/images/bouquet_2.png" alt="Изображение товара">
+                                </div>
+                                <div class="product-prev__body">
+                                    <div class="product-prev__inform">   
+                                        <span class="product-prev__title">
+                                            Композиция "Чудо"
+                                        </span>
+                                        <span class="product-prev__descr">
+                                           Белая розы "Эквадор", кустовая роза, люпин
+                                        </span>
+                                     </div>
+                                     <div class="product-prev__price">
+                                         <span class="product-prev__price-current">2850 руб.</span>
+                                         <span class="product-prev__price-old">3600 руб.</span>
+                                     </div>
+                                </div>
+                                <div class="product-prev__footer">
+                                    <button class="btn_busket">В корзину</button>
+                                </div>
+                            </div>
+
+                            <div class="product-prev">
+                                <div class="product-prev__header">
+                                        <img  class="product-prev__img" src="/css/images/hrizantema_1.png" alt="Изображение товара">
+                                </div>
+                                <div class="product-prev__body">
+                                    <div class="product-prev__inform">   
+                                        <span class="product-prev__title">
+                                           Хризантемы
+                                        </span>
+                                        <span class="product-prev__descr">
+                                           Белые хризантемы
+                                        </span>
+                                     </div>
+                                     <div class="product-prev__price">
+                                         <span class="product-prev__price-current">120 руб.</span>
+                                         <span class="product-prev__price-old">150 руб.</span>
+                                     </div>
+                                </div>
+                                <div class="product-prev__footer">
+                                    <button class="btn_busket">В корзину</button>
+                                </div>
+                            </div>
+
+
+                            <div class="product-prev">
+                                <div class="product-prev__header">
+                                        <img  class="product-prev__img" src="/css/images/roses_action.png" alt="Изображение товара">
+                                </div>
+                                <div class="product-prev__body">
+                                    <div class="product-prev__inform">   
+                                        <span class="product-prev__title">
+                                            Красные розы "Нелли"
+                                        </span>
+                                        <span class="product-prev__descr">
+                                            Букет из 7 красных роз "Нелли"
+                                        </span>
+                                     </div>
+                                     <div class="product-prev__price">
+                                         <span class="product-prev__price-current">1850 руб.</span>
+                                         <span class="product-prev__price-old">2900 руб.</span>
+                                     </div>
+                                </div>
+                                <div class="product-prev__footer">
+                                    <button class="btn_busket">В корзину</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                 </div>
+                <div class="tab">
+                       
+                    <div class="products-line__slider">
+                        <div class="js-product-line__slider">
+
+
+                            <div class="product-prev">
+                                <div class="product-prev__header">
+                                        <img class="product-prev__img" src="/css/images/kali_2.png" alt="Изображение товара">
+                                </div>
+                                <div class="product-prev__body">
+                                    <div class="product-prev__inform">   
+                                        <span class="product-prev__title">
+                                            Розовые каллы
+                                        </span>
+                                        <span class="product-prev__descr">
+                                            Букет из 11 розовых калл
+                                        </span>
+                                     </div>
+                                     <div class="product-prev__price">
+                                         <span class="product-prev__price-current">3890 руб.</span>
+                                         
+                                     </div>
+                                </div>
+                                <div class="product-prev__footer">
+                                    <button class="btn_busket">В корзину</button>
+                                </div>
+                            </div>
+
+
+                            <div class="product-prev">
+                                <div class="product-prev__header">
+                                        <img  class="product-prev__img" src="/css/images/tulipan.png" alt="Изображение товара">
+                                </div>
+                                <div class="product-prev__body">
+                                    <div class="product-prev__inform">   
+                                        <span class="product-prev__title">
+                                            Тюльпаны
+                                        </span>
+                                        <span class="product-prev__descr">
+                                            Фиолетовые тюльпаны
+                                        </span>
+                                     </div>
+                                     <div class="product-prev__price">
+                                         <span class="product-prev__price-current">170 руб./шт</span>
+                                         
+                                     </div>
+                                </div>
+                                <div class="product-prev__footer">
+                                    <button class="btn_busket">В корзину</button>
+                                </div>
+                            </div>
+
+                            <div class="product-prev">
+                                <div class="product-prev__header">
+                                        <img  class="product-prev__img" src="/css/images/alstomeria_2.png" alt="Изображение товара">
+                                </div>
+                                <div class="product-prev__body">
+                                    <div class="product-prev__inform">   
+                                        <span class="product-prev__title">
+                                           Альстромерии
+                                        </span>
+                                        <span class="product-prev__descr">
+                                           Букет ярких альстромерий
+                                        </span>
+                                     </div>
+                                     <div class="product-prev__price">
+                                         <span class="product-prev__price-current">2750 руб.</span>
+                                         
+                                     </div>
+                                </div>
+                                <div class="product-prev__footer">
+                                    <button class="btn_busket">В корзину</button>
+                                </div>
+                            </div>
+
+
+                            <div class="product-prev">
+                                <div class="product-prev__header">
+                                        <img  class="product-prev__img" src="/css/images/alstomeria_1.png" alt="Изображение товара">
+                                </div>
+                                <div class="product-prev__body">
+                                    <div class="product-prev__inform">   
+                                        <span class="product-prev__title">
+                                            Букет "Снова 17"
+                                        </span>
+                                        <span class="product-prev__descr">
+                                            Сочетание ярких, свежих альстромерии 
+                                     </div>
+                                     <div class="product-prev__price">
+                                         <span class="product-prev__price-current">5780 руб.</span>
+                                        
+                                     </div>
+                                </div>
+                                <div class="product-prev__footer">
+                                    <button class="btn_busket">В корзину</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+            </div>
+        </div>
+    </div>
+
+
+
+
+
+
+
+
+<script src="/js/jquery-3.6.0.min.js"></script>
+<script src="/js/slick.min.js"></script>
+<script src="/js/app.js"></script>
+</body>
+</html>
