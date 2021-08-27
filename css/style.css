@@ -498,7 +498,9 @@ input, select, button { outline: none }
     margin-bottom: 20px;
 }
 
-
+.s-hits{
+    margin-bottom: 30px;
+}
 .tab{
     display: none;
     transition: .4s;
