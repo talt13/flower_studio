@@ -63,9 +63,9 @@ let tabs = function(){
          tab = $(tabsBody).find('.' + tabName);
       $(this).addClass ('tabs-navigation__item--active').siblings().removeClass('tabs-navigation__item--active');
       $(tab).addClass('tab--active').siblings().removeClass('tab--active');
-      if ($(tabsBody).find('.js-product-line-slider').length){
-         $('.js-product-line-slider').each(function(){
-            $(this).slick('refresh');
+      if ($(tabsBody).find('.js-product-line__slider').length){
+         $('.js-product-line__slider').each(function(){
+            $(tabsBody).slick('refresh');
          });
       }
    });
@@ -78,8 +78,6 @@ let productLineSlider = function(){
       slidesToScroll: 1,
       dots: false,
       arrows: false,
-
-      
    })
 };
 

@@ -503,7 +503,8 @@ input, select, button { outline: none }
 }
 .tab{
     display: none;
-    transition: .4s;
+    
+   
 }
 .tab--active{
     display: block;
@@ -533,17 +534,21 @@ input, select, button { outline: none }
 }
 .hits__body{
     padding-top: 20px;
+    
 }
 .product-line__slider{
     display: flex;
     justify-content: space-between;
+    position: relative;
 }
+
 .product-prev{
     padding: 20px;
     position: relative;
     padding-top: 190px;
     width: 25%;
     transition: all linear .3s;
+    
 }
 .product-prev:hover{
     box-shadow: 0 10px 20px 0 rgba(0, 0, 0, 0.1), 0 2px 5px 0 rgba(0, 0, 0, 0.05);
@@ -558,12 +563,12 @@ input, select, button { outline: none }
     justify-content: center;
 
 }
+
 .js-product-line__slider{
     z-index: 0;
 }
 .product-prev__img{
     align-self: center;
-
     max-width: 100%;
     height: 160px;
     position: absolute;
@@ -583,7 +588,7 @@ input, select, button { outline: none }
 }
 .product-prev__title{
     font-family: 'Marck Script', cursive;
-    font-size: 20px;
+    font-size: 24px;
     line-height: 1.43;
     font-weight: 600;
 }
