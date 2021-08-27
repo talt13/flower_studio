@@ -503,7 +503,6 @@ input, select, button { outline: none }
 }
 .tab{
     display: none;
-    
    
 }
 .tab--active{
@@ -735,6 +734,9 @@ input, select, button { outline: none }
 p{
     line-height: 1.79;
 }
+.s-about{
+    margin-top: 30px;
+}
 .about{
     display: flex;
     margin-right: 30px;
@@ -748,7 +750,102 @@ p{
 }
 .about-navigation__item{
     height: 50px;
-   
     line-height: 48px;
     padding-left: 10px;
+}
+.tab-shop__wrapper p,.tab-advantages,.tab-delivery__wrapper,.tab-service__wrapper{
+    font-size: 24px;
+    color: #4b4b4b;
+    margin: 10px;
+}
+.tab-shop__wrapper img{
+    margin: 20px;
+    object-fit: cover;
+}
+.tab-service__wrapper img{
+    height: 100;
+    width: 140px;
+    padding: 10px;
+    object-fit: cover;
+}
+.tab-advantages img{
+    width: 700px;
+    height: 350px;
+    object-fit: cover;
+    padding: 10px;
+}
+.tab-shop__wrapper,.tab-delivery__wrapper,.tab-service__wrapper{
+    display: flex;
+    justify-content: space-between;
+}
+.tab-advantages__wrapper{
+    display: flex;
+    flex-direction: column;
+    align-items: space-between;
+    justify-content: center;
+}
+.tab-delivery__wrapper i{
+    padding: 10px;
+    font-size: 40px;
+    color: pink;
+}
+.footer{
+    flex: 0 0 auto;
+}
+
+.footer__socials{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    
+}
+.socials{
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    padding: 20px 0;
+}
+.socials__link i{
+    font-size: 32px;
+    padding: 20px;
+    color: #4b4b4b;
+    transition: .3s;
+}
+.socials__link i:hover{
+    color: pink;
+    transform-style: preserve-3d;
+}
+.socials__yandex{
+    display: flex;
+    align-items: center;
+    padding: 20px 0;
+}
+.socials__yandex span{
+    text-transform: uppercase;
+    font-weight: 700;
+    color: black;
+    padding: 20px 0;
+}
+.socials__yandex i{
+    color: red;
+    font-size: 24px;
+}
+
+.footer__bottom{
+    background-color: #b2b2b2;
+    padding: 20px 0;
+}
+.footer__bottom container{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.copyright{
+    color: #4b4b4b;
+    font-size: 14px;
+    text-align: center;
+}
+.copyright a{
+    color: #4b4b4b;
+    text-align: center;
 }
