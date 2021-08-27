@@ -221,17 +221,17 @@
         </div>
     </section>
 
-    <section class="s-hits"></section>
+    <section class="s-hits">
     <div class="container">
         <h2 class="title-section">Хиты продаж</h2>
-        <div class="hits ">
+        <div class="hits tabs">
             <ul class="tabs-navigation hits-navigation">
-                <li (show-tab='tab-hits') class="hits-navigation__item tabs-navigation__item tabs-navigation__item--active">Хиты продаж</li>
-                <li (show-tab='tab-benefit') class="hits-navigation__item tabs-navigation__item">Выгодно</li>
-                <li (show-tab='tab-new') class="hits-navigation__item tabs-navigation__item">Новинки</li>
+                <li ( show-tab ="tab-hits") class="hits-navigation__item tabs-navigation__item tabs-navigation__item--active">Хиты продаж</li>
+                <li ( show-tab ="tab-benefit") class="hits-navigation__item tabs-navigation__item">Выгодно</li>
+                <li ( show-tab ="tab-new") class="hits-navigation__item tabs-navigation__item">Новинки</li>
             </ul>
             <div class="tabs__body hits__body">
-                <div class="tab tab--active ">
+                <div class="tab tab-hits tab--active ">
                             <div class="products-line__slider">
                                 <div class="js-product-line__slider">
 
@@ -332,7 +332,7 @@
                                 </div>
                             </div>
                 </div>
-                <div class="tab">
+                <div class="tab tab-benefit">
                         
                     <div class="products-line__slider">
                         <div class="js-product-line__slider">
@@ -434,7 +434,7 @@
                         </div>
                     </div>
                  </div>
-                <div class="tab">
+                <div class="tab tab-new">
                        
                     <div class="products-line__slider">
                         <div class="js-product-line__slider">
@@ -442,7 +442,7 @@
 
                             <div class="product-prev">
                                 <div class="product-prev__header">
-                                        <img class="product-prev__img" src="./css/images/kali_2.png" alt="Изображение товара">
+                                        <img class="product-prev__img" src="./css/images/kali_2.jpg" alt="Изображение товара">
                                 </div>
                                 <div class="product-prev__body">
                                     <div class="product-prev__inform">   
@@ -535,17 +535,84 @@
                         </div>
                     </div>
                 </div>
-                
             </div>
         </div>
     </div>
-
-
-
-
-
-
-
+</section>
+<section class="info information">
+    <div class="container">
+        <div class="inform">
+            <div class="inform__item">
+                <h2 class="inform__title">Новости</h2>
+                <div class="news-prev__wrapper">
+                    <div class="news-prev">
+                        <img src="css/images/tulip.png" alt="" class="news-prev_img">
+                        <div class="news-prev_body">
+                            <h4>Выставка в Германии</h4>
+                            <p>31 июля 2021</p>
+                        </div>
+                    </div>
+                    <div class="news-prev">
+                       <img src="css/images/kali_2.jpg" alt="" class="news-prev_img">
+                        <div class="news-prev_body">
+                            <h4>Новинки в нашем магазине</h4>
+                            <p>2 августа 2021</p>
+                        </div>
+                    </div>
+                    <a class="news-prev_all" href="">Все новости</a>
+                </div>
+                
+            </div>
+            <div class="inform__item">
+                <h2 class="inform__title">Отзывы</h2>
+                <div class="preview-prev">
+                    <p>"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud"</p>
+                    <span>Владимир</span>
+                </div>
+                <a class="news-prev_all preiew" href="">Все отзывы</a>
+            </div>
+            <div class="inform__item">
+                <h2 class="inform__title brands">Наши партнеры</h2>
+                <div class="brands-prev">
+                    <ul class="brands-prev__list">
+                        <li class="brands-prev__item"><a href="" class="brands-prev__link"><img src="./css/images/brand_2.png" alt="" class="brands-prev__img"></a></li>
+                        <li class="brands-prev__item"><a href="" class="brands-prev__link"><img src="./css/images/brand_3.jpg" alt="" class="brands-prev__img"></a></li>
+                        <li class="brands-prev__item"><a href="" class="brands-prev__link"><img src="./css/images/brand_4.jpg" alt="" class="brands-prev__img"></a></li>
+                        <li class="brands-prev__item"><a href="" class="brands-prev__link"><img src="./css/images/brand_5.jpg" alt="" class="brands-prev__img"></a></li>
+                    </ul>
+                </div>
+                <a class="news-prev_all brands news-prev_all-tree" href="">Все коллаборации</a>
+            </div>
+        </div>
+    </div>
+</section>
+<section class="s-about">
+    <div class="container">
+       <h2 class="title-section">О нас</h2>
+        <div class="about">
+                <div class="tabs__body about__body">
+                    <div class="tab tab-shop tab--active ">
+                        <p>"Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt. Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit, sed quia non numquam eius modi tempora incidunt ut labore et dolore magnam aliquam quaerat voluptatem. Ut enim ad minima veniam, quis nostrum exercitationem ullam corporis suscipit laboriosam, nisi ut aliquid ex ea commodi consequatur? Quis autem vel eum iure reprehenderit qui in ea voluptate velit esse quam nihil molestiae consequatur, vel illum qui dolorem eum fugiat quo voluptas nulla pariatur?"</p>
+                    </div>
+                    <div class="tab tab-advantages">
+                        <p>2 text</p>
+                    </div>
+                    <div class="tab tab-service">
+                        <p>"Three ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt. Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit, sed quia non numquam eius modi tempora incidunt ut labore et dolore magnam aliquam quaerat voluptatem. Ut enim ad minima veniam, quis nostrum exercitationem ullam corporis suscipit laboriosam, nisi ut aliquid ex ea commodi consequatur? Quis autem vel eum iure reprehenderit qui in ea voluptate velit esse quam nihil molestiae consequatur, vel illum qui dolorem eum fugiat quo voluptas nulla pariatur?"</p>
+                    </div>
+                    <div class="tab tab-delivery">
+                        <p>"Four ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt. Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit, sed quia non numquam eius modi tempora incidunt ut labore et dolore magnam aliquam quaerat voluptatem. Ut enim ad minima veniam, quis nostrum exercitationem ullam corporis suscipit laboriosam, nisi ut aliquid ex ea commodi consequatur? Quis autem vel eum iure reprehenderit qui in ea voluptate velit esse quam nihil molestiae consequatur, vel illum qui dolorem eum fugiat quo voluptas nulla pariatur?"</p>
+                    </div>
+                </div>
+                <ul class="tabs-navigation about-navigation">
+                    <li ( show-tab = "tab-shop") class="about-navigation__item tabs-navigation__item tabs-navigation__item--active">Интернет-магазин</li>
+                    <li ( show-tab = "tab-advantages") class="about-navigation__item tabs-navigation__item">Наши преимущества</li>
+                    <li ( show-tab = "tab-service") class="about-navigation__item tabs-navigation__item">Сервис</li>
+                    <li ( show-tab = "tab-delivery") class="about-navigation__item tabs-navigation__item">Доставка</li>
+                </ul>
+        </div>
+    </div>
+</section>
 
 <script src="./js/jquery-3.6.0.min.js"></script>
 <script src="./js/slick.min.js"></script>

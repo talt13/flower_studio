@@ -500,14 +500,11 @@ input, select, button { outline: none }
 
 
 .tab{
-    opacity: 0;
     display: none;
-    
+    transition: .4s;
 }
 .tab--active{
     display: block;
-    animation: linear .7s forwards;
-    opacity: 1;
 }
 
 .hits-navigation{
@@ -617,4 +614,134 @@ input, select, button { outline: none }
     background: pink;
     color: #fff;
     font-weight: 700;
+}
+.information{
+    background: #e5e5e5;
+}
+.inform{
+    display: flex;
+    padding-right: 40px;
+}
+.inform:last-child{
+    padding-right: 0;
+}
+.inform__item{
+    flex: 0 0 33.33333%;
+    width: 33.333333%;
+    padding: 27px 0 0 30px;
+}
+.inform__title{
+    color: #2b2b2b;
+    font-family: 'Marck Script', cursive;
+    font-size: 24px;
+    line-height: 20px;
+    margin-bottom: 20px;
+}
+
+.news-prev__wrapper{
+    display: flex;
+    flex-direction: column;
+}
+.news-prev{
+    display: flex;
+    color: #939495;
+    margin-bottom: 40px;
+}
+.news-prev_body h4{
+    color: #2b2b2b;
+    font-weight: 600;
+    font-size: 14px;
+    line-height: 22px;
+    margin-bottom: 10px;
+}
+.news-prev_body p{
+    color: #939495;
+    font-size: 12px;
+    line-height: 20px;
+}
+
+.news-prev_img{
+    margin-right: 20px;
+    background-size: cover;
+    height: 80px;
+    width: 80px;
+    object-fit: cover;
+    border-radius: 4px;
+    flex-shrink: 0;
+    
+}
+.news-prev_all{
+    display: inline-block;
+    color: #939495;
+    text-decoration: underline;
+    margin-bottom: 50px;
+}
+
+.preview-prev p{
+    line-height: 1.79;
+    margin-bottom: 15px;
+}
+.preview-prev span{
+    background-color: #fff;
+    height: 20px;
+    border: 1px solid rgba(38, 38, 38, 0.15);
+    border-radius: 20px;
+    margin-bottom: 50px;
+    font-size: 12px;
+    line-height: 18px;
+    padding: 5px;
+}
+.preiew{
+    margin-top: 95px;
+}
+.brands-prev__link{
+    display: inline-block;
+}
+.brands-prev__list{
+    display: flex;
+    align-items: center;
+    
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+.brands-prev__item{
+    height: 80px;
+    width: 110px;
+    object-fit: cover;
+    margin: 10px;
+    cursor: pointer;
+
+}
+.brands-prev__item:hover{
+    box-shadow: 0 10px 20px 0 rgba(0, 0, 0, 0.1), 0 2px 5px 0 rgba(0, 0, 0, 0.05);
+}
+.brands-prev__img{
+    margin-bottom: 5px;
+
+}
+.brands{
+    padding-left: 30px;
+}
+.news-prev_all-tree{
+    margin-top: 39px;
+}
+p{
+    line-height: 1.79;
+}
+.about{
+    display: flex;
+    margin-right: 30px;
+}
+.about__body{
+    flex: 1;
+}
+.about-navigation{
+    flex: 0 0 255px;
+    width: 255px;
+}
+.about-navigation__item{
+    height: 50px;
+   
+    line-height: 48px;
+    padding-left: 10px;
 }
