@@ -65,7 +65,7 @@ let tabs = function(){
       $(tab).addClass('tab--active').siblings().removeClass('tab--active');
       if ($(tabsBody).find('.js-product-line__slider').length){
          $('.js-product-line__slider').each(function(){
-            $(tabsBody).slick('refresh');
+            $('.js-product-line__slider').slick('setPosition');
          });
       }
    });
@@ -77,7 +77,7 @@ let productLineSlider = function(){
       slidesToShow: 4,
       slidesToScroll: 1,
       dots: false,
-      arrows: false,
+      arrows: false
    })
 };
 
